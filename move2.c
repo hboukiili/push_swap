@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 05:47:39 by hboukili          #+#    #+#             */
-/*   Updated: 2022/02/28 23:41:51 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/03/01 00:35:33 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	rra_move(t_list **stack_a, int l)
 	t_list	*tmp2;
 	int		i;
 
-	if (count_stack(stack_a) > 0)
+	if (count_stack(stack_a) > 1)
 	{	
 		tmp = (*stack_a);
 		while (tmp->next->next != NULL)
