@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 21:32:29 by hboukili          #+#    #+#             */
-/*   Updated: 2022/03/01 00:26:10 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/03/06 22:57:33 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ void	checker(t_list **stack_a, t_list **stack_b)
 			rr_move(stack_a, stack_a, 1);
 		else
 			checker2(stack_a, stack_b, str);
+		free(str);
 		str = get_next_line(0);
 	}
 	res(stack_a, i);
@@ -107,4 +108,5 @@ int	main(int ac, char **av)
 		check_double(&stack_a);
 		checker(&stack_a, &stack_b);
 	}
+	//system("leaks checker");
 }
