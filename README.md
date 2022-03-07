@@ -7,6 +7,7 @@ The first, named checker which takes integer arguments and reads instructions on
 The second one called push_swap which calculates and displays on the standard output the smallest progam using push_swap instruction language that sorts inte-ger arguments received.
 --------------------------------------
 push_swap instructions
+--------------------------
 
 sa: swap a - swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
 
