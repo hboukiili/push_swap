@@ -37,7 +37,7 @@ Compile push_swap: make
 Compile bonus: make bonus
 
 Execute
-
+--------------------
 checker: ./checker 0 2 3 1 then program's waiting for user input
 
 push_swap: ./push_swap 0 2 3 1
