@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 03:42:22 by hboukili          #+#    #+#             */
-/*   Updated: 2022/02/28 23:54:26 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/03/07 02:57:06 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	sa_move(t_list **stack_a, int l)
 		tmp1->next = (*stack_a);
 		*stack_a = tmp1;
 		if (l == 0)
-			error("sa");
+			write(1, "sa\n", 3);
 	}
 }
 
@@ -38,7 +38,7 @@ void	sb_move(t_list **stack_b, int l)
 		tmp1->next = (*stack_b);
 		*stack_b = tmp1;
 		if (l == 0)
-			error("sb");
+			write(1, "sb\n", 3);
 	}
 }
 
@@ -49,7 +49,7 @@ void	ss_move(t_list **stack_a, t_list **stack_b, int l)
 		sa_move(stack_a, 1);
 		sb_move(stack_b, 1);
 		if (l == 0)
-			error("ss");
+			write(1, "ss\n", 3);
 	}
 }
 
@@ -69,7 +69,7 @@ void	pb_move(t_list **stack_a, t_list **stack_b, int l)
 		add_front(stack_b, &tmp2);
 		del_nodes(stack_a, tmp1);
 		if (l == 0)
-			error("pb");
+			write(1, "pb\n", 3);
 	}
 }
 
@@ -89,6 +89,6 @@ void	pa_move(t_list **stack_a, t_list **stack_b, int l)
 		add_front(stack_a, &tmp2);
 		del_nodes(stack_b, tmp);
 		if (l == 0)
-			error("pa");
+			write(1, "pa\n", 3);
 	}
 }

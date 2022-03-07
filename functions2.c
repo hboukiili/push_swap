@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 20:50:17 by hboukili          #+#    #+#             */
-/*   Updated: 2022/02/28 23:48:29 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/03/07 02:57:54 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ void	rrr_move(t_list **stack_a, t_list **stack_b, int l)
 	rra_move(stack_a, 1);
 	rrb_move(stack_b, 1);
 	if (l == 0)
-		error("rrr");
+		write(1, "rrr\n", 4);
 }

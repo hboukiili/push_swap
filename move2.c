@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 05:47:39 by hboukili          #+#    #+#             */
-/*   Updated: 2022/03/01 00:35:33 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/03/07 02:55:37 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ra_move(t_list **stack_a, int l)
 		add_last(stack_a, &tmp2);
 		del_nodes(stack_a, tmp);
 		if (l == 0)
-			error("ra");
+			write(1, "ra\n", 3);
 	}
 }
 
@@ -48,7 +48,7 @@ void	rb_move(t_list **stack_b, int l)
 		add_last(stack_b, &tmp2);
 		del_nodes(stack_b, tmp);
 		if (l == 0)
-			error("rb");
+			write(1, "rb\n", 3);
 	}
 }
 
@@ -59,7 +59,7 @@ void	rr_move(t_list **stack_a, t_list **stack_b, int i)
 		ra_move(stack_a, 1);
 		rb_move(stack_b, 1);
 		if (i == 0)
-			error("rr");
+			write(1, "rr\n", 3);
 	}
 }
 
@@ -81,7 +81,7 @@ void	rra_move(t_list **stack_a, int l)
 		add_front(stack_a, &tmp2);
 		del_lastnodes(tmp);
 		if (l == 0)
-			error("rra");
+			write(1, "rra\n", 4);
 	}
 }
 
@@ -103,6 +103,6 @@ void	rrb_move(t_list **stack_b, int l)
 		add_front(stack_b, &tmp2);
 		del_lastnodes(tmp);
 		if (l == 0)
-			error("rrb");
+			write(1, "rrb\n", 4);
 	}
 }
