@@ -22,7 +22,7 @@ void	error(char *str)
 		write(2, &str[i], 1);
 		i++;
 	}
-	write(1, "\n", 1);
+	write(2, "\n", 1);
 }
 
 long	ft_atoi(char *str)
