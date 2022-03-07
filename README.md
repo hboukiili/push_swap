@@ -5,6 +5,7 @@ This project contains 2 programs:
 
 The first, named checker which takes integer arguments and reads instructions on the standard output. Once read,checker executes them and displays OK if integersare sorted. Otherwise, it will display KO.
 The second one called push_swap which calculates and displays on the standard output the smallest progam using push_swap instruction language that sorts inte-ger arguments received.
+--------------------------------------
 push_swap instructions
 sa: swap a - swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
 sb: swap b - swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.
@@ -18,11 +19,10 @@ rra: reverse rotate a - shift down all elements of stack a by 1. The last elemen
 rrb: reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.
 rrr: rra and rrb at the same time.
 Compilation
-Compile checker: make checker
 
-Compile push_swap: make push_swap
+Compile push_swap: make
 
-Compile both: make
+Compile bonus: make bonus
 
 Execute
 checker: ./checker 0 2 3 1 then program's waiting for user input
