@@ -32,7 +32,7 @@ rrb: reverse rotate b - shift down all elements of stack b by 1. The last elemen
 rrr: rra and rrb at the same time.
 
 Compilation
-
+---------------------
 Compile push_swap: make
 
 Compile bonus: make bonus
