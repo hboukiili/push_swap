@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 23:04:36 by hboukili          #+#    #+#             */
-/*   Updated: 2022/02/28 21:12:14 by hboukili         ###   ########.fr       */
+/*   Updated: 2022/05/11 19:07:26 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,12 +109,13 @@ void	push_to_a(t_list **stack_a, t_list **stack_b)
 void	sort_100(t_list **stack_a, t_list **stack_b, int size)
 {
 	t_push	x;
-
+	
 	while (size >= 5)
 	{
-		x.push = ((size - 5) / 3) + 1;
-		if (size >= 100)
-			x.push = ((size - 5) / 5) + 1;
+		if (size <= 100)
+			x.push = ((size - 5) / 3) + 1;
+		if (size > 100)
+		 	x.push = ((size - 5) / 5) + 1;
 		x.min = check_small_value(stack_a);
 		x.max = (x.min + x.push) - 1;
 		x.med = (x.min + x.max) / 2;
